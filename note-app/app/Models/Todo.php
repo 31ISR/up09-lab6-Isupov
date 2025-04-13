@@ -2,23 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Todo extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name', 
-        'done', 
-        'urgent', 
-        'date_completed',
-    ];
-    
-    protected $casts = [
-        'done' => 'boolean',
-        'urgent' => 'boolean',
-        'date_completed' => 'datetime'
-    ];
+    protected $fillable = ['name', 'done', 'urgent', 'dateCompleted'];
+    public $timestamps = true;
 }

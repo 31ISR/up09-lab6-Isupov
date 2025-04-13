@@ -9,3 +9,110 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+/* Основные стили */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.new-note-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.notes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.note-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: black;
+}
+
+.note-content {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Формы */
+.note-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Кнопки */
+.btn-view, .btn-edit, .btn-delete, 
+.btn-cancel, .btn-submit {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-view {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #FFC107;
+    color: black;
+}
+
+.btn-delete {
+    background-color: #F44336;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Пагинация */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
