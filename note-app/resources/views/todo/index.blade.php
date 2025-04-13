@@ -1,3 +1,3 @@
 <x-layout>
-    <h1>Welcome</h1>
+    <h1>index</h1>
 </x-layout>
