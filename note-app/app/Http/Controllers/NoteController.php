@@ -15,7 +15,6 @@ class NoteController extends Controller
         $notes = Note::query()->orderBy('created_at', 'desc')->paginate();
         return view('note.index', ['notes' => $notes]);
     }
-
     /**
      * Show the form for creating a new resource.
      */
@@ -29,7 +28,14 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        return 'store';
+        $data = $request->validate([
+            'note' => ['required', 'string']
+        ]);
+
+        $data['user_id'] = 1;
+        $note = Note::create($data);
+
+        return to_route('note.show', $note)->with('message', 'Note was created');
     }
 
     /**
