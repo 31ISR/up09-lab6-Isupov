@@ -9,14 +9,14 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
-/* resources/css/app.css */
+
 .notes-container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Кнопка "New Note" */
+
 .new-note-btn {
     display: block;
     margin: 0 auto 1.5rem;
@@ -40,10 +40,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
-
-/* Карточка заметки - желтый фон */
 .note-card {
-    background: #ffe600; /* Светло-желтый фон */
+    background: #ffe600;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -51,23 +49,19 @@
     display: flex;
     flex-direction: column;
 }
-
-/* Текст заметки - черный */
 .note-content {
-    color: #000000; /* Черный текст */
+    color: #000000; 
     line-height: 1.6;
     margin-bottom: 1.5rem;
     font-family: 'Georgia', serif;
     font-size: 1rem;
     flex-grow: 1;
 }
-
-/* Действия с заметкой - выравнивание справа */
 .note-actions {
     display: flex;
     gap: 1rem;
     margin-top: auto;
-    justify-content: flex-end; /* Кнопки справа */
+    justify-content: flex-end; 
 }
 
 
@@ -75,7 +69,7 @@
 
 
 
-/* Пагинация */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -105,15 +99,15 @@
     border-color: #4f46e5;
     color: white;
 }
-/* Стили для кнопок действий (одинаковый размер) */
+
 .note-actions a, 
 .note-actions button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     max-height: 30px;
-    min-width: 60px; /* Фиксированная минимальная ширина */
-    padding: 0.4rem 0.8rem; /* Увеличенные отступы */
+    min-width: 60px; 
+    padding: 0.4rem 0.8rem; 
     border-radius: 4px;
     font-weight: 500;
     font-size: 0.875rem;
@@ -125,47 +119,32 @@
 .note-actions button{
     height: 30px !important;
 }
-/* Стили для View и Edit (синие) */
 .note-actions a {
     background-color: #1E88E5 !important;
     color: white !important;
     border: 1px solid #1E88E5;
 }
-
 .note-actions a:hover {
     background-color: #1565C0 !important;
     transform: translateY(-1px);
 }
-
-/* Стили для Delete (красная) */
 .note-actions button {
     background-color: #E53935 !important;
     color: white !important;
     border: 1px solid #E53935;
 }
-
 .note-actions button:hover {
     background-color: #C62828 !important;
     transform: translateY(-1px);
 }
-
-/* Выравнивание кнопок справа с одинаковыми промежутками */
 .note-actions {
     display: flex;
-    gap: 0.8rem; /* Равные промежутки между кнопками */
+    gap: 0.8rem; 
     margin-top: auto;
     justify-content: flex-end;
     padding-top: 1rem;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
-
-
-
-
-
-
-
-/* Основные стили формы */
 .note-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -174,7 +153,6 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 .note-form h1 {
     font-size: 1.5rem;
     color: #333;
@@ -182,9 +160,8 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #eee;
 }
-
-/* Стили для текстового поля */
 .note-form textarea {
+    background-color: #ffe600;
     width: 100%;
     min-height: 200px;
     padding: 12px;
@@ -196,20 +173,16 @@
     resize: vertical;
     margin-bottom: 1.5rem;
 }
-
 .note-form textarea:focus {
     outline: none;
     border-color: #6b7280;
     box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.1);
 }
-
-/* Стили для кнопок */
 .form-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .btn {
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -217,33 +190,26 @@
     cursor: pointer;
     transition: all 0.2s;
 }
-
 .btn-submit {
     background-color: #4f46e5;
     color: white;
     border: none;
 }
-
 .btn-submit:hover {
     background-color: #4338ca;
 }
-
 .btn-cancel {
     color: #6b7280;
     border: 1px solid #d1d5db;
     background: white;
 }
-
 .btn-cancel:hover {
     background-color: #f9fafb;
 }
-
-/* Стили для существующих заметок (как на картинке) */
 .note-container {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .note-item {
     background: #fff;
     padding: 1.5rem;
@@ -251,28 +217,23 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 .note-content {
     color: #4b5563;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
-
 .note-actions {
     display: flex;
     gap: 1rem;
 }
-
 .note-actions a {
     color: #4f46e5;
     text-decoration: none;
     font-weight: 500;
 }
-
 .note-actions a:hover {
     text-decoration: underline;
 }
-
 .note-actions button {
     background: none;
     border: none;
@@ -281,3 +242,86 @@
     cursor: pointer;
     padding: 0;
 }
+
+
+.note-view-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.note-view-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.note-view-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.note-view-updated {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.note-view-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #000;
+    white-space: pre-line;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #ffe600;
+    border-radius: 8px;
+}
+
+.note-view-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #1E88E5;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-edit:hover {
+    background-color: #1565C0;
+    transform: translateY(-1px);
+}
+
+.btn-delete {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #E53935;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #C62828;
+    transform: translateY(-1px);
+}
+
