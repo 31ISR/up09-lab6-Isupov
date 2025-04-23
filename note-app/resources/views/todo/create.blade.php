@@ -1,3 +1,4 @@
-<x-layout>
+<x-app-layout>
+
     <h1>create</h1>
-</x-layout>
+</x-app-layout>

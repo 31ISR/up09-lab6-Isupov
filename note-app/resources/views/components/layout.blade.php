@@ -11,7 +11,7 @@
 
     <body class="antialiased">
         @session('message')
-            <div class="success-message">
+            <div class="" style="text-align: center; font-size: 30px; background-color: #ffe600;";>
                 {{ session('message') }}
             </div>
         @endsession

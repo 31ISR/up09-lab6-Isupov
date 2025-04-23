@@ -1,4 +1,5 @@
-<x-layout>
+<x-app-layout>
+
     <div class="notes-container">
         <div class="note-view-card">
             <div class="note-view-header">
@@ -28,4 +29,4 @@
             
         </div>
     </div>
-</x-layout>
+</x-app-layout>
