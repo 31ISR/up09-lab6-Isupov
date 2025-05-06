@@ -1,10 +1,17 @@
 <x-app-layout>
 
     <div class="notes-container">
+    <div>
+    
+         <a href="{{ route('todo.index') }}" class="new-note-btn">
+            Todo
+        </a>
         <a href="{{ route('note.create') }}" class="new-note-btn">
             New Note
         </a>
+    </div>
         
+       
         <div class="notes-grid">
             @foreach ($notes as $note)
                 <div class="note-card">
