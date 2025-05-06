@@ -325,3 +325,251 @@
     transform: translateY(-1px);
 }
 
+
+.todos-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.new-todo-btn {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: background-color 0.2s;
+}
+
+.new-todo-btn:hover {
+    background-color: #2563eb;
+}
+
+
+.todos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.todo-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.todo-card.urgent {
+    border-left: 4px solid #ef4444;
+}
+
+
+.todo-card.done {
+    opacity: 0.8;
+    background-color: #f3f4f6;
+}
+
+.todo-card.done .todo-content h3 {
+    text-decoration: line-through;
+    color: #6b7280;
+}
+
+.todo-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #1f2937;
+    font-size: 1.125rem;
+}
+
+.todo-content p {
+    margin: 0.25rem 0;
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.todo-actions a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.todo-actions a:hover {
+    text-decoration: underline;
+}
+
+.todo-actions form {
+    display: inline;
+}
+
+.todo-actions button {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 0;
+}
+
+.todo-actions button:hover {
+    text-decoration: underline;
+}
+
+
+.todo-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form h1 {
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 1.5rem;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-checkboxes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-cancel {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.btn-cancel:hover {
+    background-color: #d1d5db;
+}
+
+.btn-submit, .btn-edit {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+}
+
+.btn-submit:hover, .btn-edit:hover {
+    background-color: #2563eb;
+}
+
+.btn-delete {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #dc2626;
+}
+
+.todo-view-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-view-card.urgent {
+    border-left: 4px solid #ef4444;
+}
+
+.todo-view-header {
+    margin-bottom: 1.5rem;
+}
+
+.todo-view-title {
+    margin: 0 0 0.5rem 0;
+    color: #1f2937;
+    font-size: 1.5rem;
+}
+
+.todo-view-created, .todo-view-updated {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.todo-view-content {
+    margin-bottom: 2rem;
+}
+
+.todo-view-content p {
+    margin: 0.5rem 0;
+    color: #1f2937;
+}
+
+.todo-view-content p strong {
+    color: #4b5563;
+}
+
+.todo-view-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+

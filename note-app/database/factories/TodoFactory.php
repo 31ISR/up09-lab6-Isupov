@@ -15,12 +15,13 @@ class TodoFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition(): array
-     {
-         return [
-             'name'=> fake()->realText(75),
-             'done' => 1,
-             'urgent' => 0,
-             'dateCompleted' => fake()->dateTime('now'),
-         ];
-     }
+    {
+        return [
+            'user_id' => \App\Models\User::factory(),
+            'name' => fake()->realText(75),
+            'done' => fake()->boolean,
+            'urgent' => fake()->boolean,
+            'dateCompleted' => fake()->optional()->dateTimeThisYear,
+        ];
+    }
 }
